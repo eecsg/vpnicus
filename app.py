@@ -8,3 +8,7 @@ def home():
 @app.route('/verify')
 def verify():
     return 'Soon!'
+
+@app.route('/admin')
+def admin():
+    return 'Soon!'
