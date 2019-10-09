@@ -3,7 +3,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    content = '''<h1>vpnicus</h1>'''
+    return render_template('default.html', content=content)
 
 @app.route('/verify')
 def verify():
